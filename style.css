@@ -1,0 +1,122 @@
+body {
+    min-height: 100%;
+    background-color: rgb(246, 251, 253);
+    background-image: url("japan2.png");
+    background-repeat: no-repeat;
+    background-size: 950px;
+    background-position: center center;
+    background-attachment: fixed;
+    max-width: fit-content;
+}
+
+.back {
+    height: 2rem;
+    background-color: rgb(255, 227, 174);
+    border-radius: 3rem;
+    
+    box-shadow: 5px 1px 10px rgb(204, 202, 202);
+    position: absolute;
+    width: 100%;
+    top: 1rem;
+}
+
+.front-wrap {
+    
+    filter: drop-shadow(5px 1px 10px rgb(204, 202, 202));
+}
+
+.front {
+    width: 50%;
+    margin: auto;
+    background-color: rgb(255, 255, 255);
+    height: 5rem;
+    position: relative;
+    z-index: 99;
+    /* Make the front a pentagon shape */
+    clip-path: polygon(0 0, 100% 0%, 100% 85%, 47% 100%, 0 82%);
+}
+
+.front p {
+    text-align: center;
+    font-size: 20pt;
+    padding-top: 1rem;
+}
+
+header {
+    position: relative;
+    width: 90vw;
+    margin: auto;
+}
+
+table {
+    float: left;
+    margin-right: 3rem;
+}
+
+table,
+th,
+td {
+    border: none;
+}
+
+
+/* Provide color orange to every th */
+
+table thead tr th {
+    background-color: rgb(230, 149, 0);
+    color: #fff;
+    padding: 0.3rem;
+}
+
+table tbody tr td {
+    /* Styles for every td */
+    border: 1px solid #333;
+    border-radius: 3px;
+    padding: 0.5rem;
+    color: #333;
+    background-color: rgb(247, 243, 240);
+}
+
+.grid {
+    width: 50%;
+    float: left;
+    margin-top: 48px;
+    margin-bottom: 48px;
+}
+
+.left-top {
+    margin-top: 48px;
+    float: right;
+    width: 50%;
+    margin-bottom: 3rem;
+}
+
+.bottom-left {
+    margin-top: 45px;
+    float: left;
+    width: 40%;
+    display: grid;
+    grid-template-columns: 30% 30%;
+    margin-bottom: 45px;
+}
+
+.bottom-right {
+    width: 50%;
+    float: right;
+    display: grid;
+}
+
+.bottom-right .top {
+    float: left;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.left-top table {
+    float: right;
+    padding-right: 3rem;
+}
+
+.bottom-right table {
+    float: right;
+}
